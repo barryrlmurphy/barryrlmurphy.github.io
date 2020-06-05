@@ -1,0 +1,86 @@
+body {
+  font-family: 'ProductSans', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #85819c;
+  background-color: #f7f8fa;
+}
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*='pure-u'] {
+  font-family: 'ProductSans', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #45405b;
+}
+h1 {
+  font-size: 36px;
+}
+h2,
+h3 {
+  font-size: 17px;
+}
+
+.l-box {
+  padding: 20px;
+  /* border: 1px dotted red; */
+}
+
+.header .header-title {
+  font-size: 22px;
+}
+.header .pure-menu-list {
+  position: relative;
+  right: 0px;
+}
+
+.accent {
+  color: #50afc0;
+}
+
+.img-dev-at-work {
+  max-width: 600px;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* small */
+@media (max-width: 568px) {
+  .img-dev-at-work {
+    display: none;
+  }
+}
+
+/* medium */
+@media (max-width: 768px) and (min-width: 569px) {
+  .img-dev-at-work {
+    display: none;
+  }
+}
+
+/* large */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .img-dev-at-work {
+    display: none;
+  }
+}
+
+/* x-large */
+@media (min-width: 1024px) {
+  .img-dev-at-work {
+    display: block;
+  }
+}
