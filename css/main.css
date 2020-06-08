@@ -26,35 +26,102 @@ h6 {
 }
 h1 {
   font-size: 36px;
+  margin: 0px 0px 20px 0px;
 }
 h2,
 h3 {
   font-size: 17px;
+  margin: 0px 0px 10px 0px;
 }
 
 .l-box {
   padding: 20px;
   /* border: 1px dotted red; */
 }
+.l-box.no-pad-top {
+  padding: 0px 20px 20px 20px;
+  /* border: 1px dotted red; */
+}
 
 .header .header-title {
-  font-size: 22px;
+  font-size: 18px;
+  text-transform: none;
+  padding: 10px 20px;
 }
 .header .pure-menu-list {
-  position: relative;
-  right: 0px;
+  float: right;
+  top: 9px;
+  right: 20px;
 }
 
-.accent {
+.accent,
+.nav-item-selected > .pure-menu-link,
+.nav-item-selected > .pure-menu-link:visited {
   color: #50afc0;
 }
 
 .img-dev-at-work {
-  max-width: 600px;
+  /* max-width: 600px; */
+}
+
+.pure-menu a.icon {
+  float: right;
+  display: block;
+  font-size: 18px;
+  color: #45405b;
+}
+
+.pure-menu-item.horizontal {
+  display: none;
+}
+.pure-menu-item.nav-item-selected a {
+  color: #50afc0;
 }
 
 .footer {
   text-align: center;
+}
+.footer .l-box {
+  border-top: 1px solid #e2e2e2;
+  margin: 0px 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #212b31;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #999999;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .nav-item.nav-item-selected {
+  color: #50afc0;
 }
 
 /* small */
@@ -69,11 +136,35 @@ h3 {
   .img-dev-at-work {
     display: none;
   }
+  .pure-menu-item.horizontal {
+    display: inline-block;
+  }
+  .pure-menu a.icon {
+    display: none;
+  }
+  body {
+    padding: 0px 40px;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* large */
 @media (max-width: 1024px) and (min-width: 769px) {
   .img-dev-at-work {
+    display: none;
+  }
+  body {
+    padding: 0px 80px;
+  }
+  .pure-menu-item.horizontal {
+    display: inline-block;
+  }
+  .pure-menu a.icon {
     display: none;
   }
 }
@@ -82,5 +173,14 @@ h3 {
 @media (min-width: 1024px) {
   .img-dev-at-work {
     display: block;
+  }
+  body {
+    padding: 0px 120px;
+  }
+  .pure-menu-item.horizontal {
+    display: inline-block;
+  }
+  .pure-menu a.icon {
+    display: none;
   }
 }

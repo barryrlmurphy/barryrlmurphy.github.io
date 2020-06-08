@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/pure-grids-responsive-min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js/main.js"></script>
   </head>
 
   <body>
@@ -20,35 +25,57 @@
       <div class="header">
         <div class="pure-menu pure-menu-horizontal">
           <a href="#" class="header-title pure-menu-heading pure-menu-link"
-            >Portfoli<span class="accent">o</span></a
+            ><span class="accent">@</span>barryrlmurphy</a
           >
           <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected">
+            <li class="pure-menu-item horizontal nav-item nav-item-selected">
               <a href="#" class="pure-menu-link">Home</a>
             </li>
-            <li class="pure-menu-item">
+            <li class="pure-menu-item horizontal nav-item">
               <a href="#" class="pure-menu-link">About</a>
             </li>
-            <li class="pure-menu-item">
+            <li class="pure-menu-item horizontal nav-item">
               <a href="#" class="pure-menu-link">Contact</a>
             </li>
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="toggleSideMenu()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
           </ul>
         </div>
       </div>
 
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#" class="nav-item nav-item-selected">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Contact</a>
+      </div>
+
       <div class="pure-g">
-        <div class="pure-u-1 pure-u-lg-1-2">
+        <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-2">
           <div class="l-box">
             <h1 class="text-box-head">About <span class="accent">Me</span></h1>
+            <h2>
+              Barry Murphy, Web Developer and Engineering Manager, from Wexford,
+              Ireland.
+            </h2>
             <p class="text-box-subhead">
-              I'm Barry Murphy, Web Developer and Former Director of
-              Engineering, from Wexford, Ireland.
+              Technology Leader with over 15 years experience. I have a proven
+              track record as a Software Developer, Manager and Leader. My
+              current role is Director of Engineering for DoneDeal.ie and
+              Adverts.ie, the two largest classified marketplaces in Ireland.
             </p>
           </div>
 
           <div class="pure-g">
             <div class="pure-u-1 pure-u-sm-1-2">
-              <div class="l-box">
+              <div class="l-box no-pad-top">
                 <h2 class="text-box-head">Experience</h2>
                 <p class="text-box-subhead">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -64,7 +91,7 @@
             </div>
 
             <div class="pure-u-1 pure-u-sm-1-2">
-              <div class="l-box">
+              <div class="l-box no-pad-top">
                 <h2 class="text-box-head">What Skills I have</h2>
                 <p class="text-box-subhead">
                   Javascript, Agile Methodologies (Scrum, Kanban, Scrumban),
@@ -79,7 +106,7 @@
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-lg-1-2">
+        <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-2">
           <div class="l-box">
             <img
               class="img-dev-at-work pure-img"
@@ -90,7 +117,7 @@
         </div>
       </div>
 
-      <div class="footer pure-u-1">
+      <div class="footer pure-u-1 pure-u-xl-1-1">
         <div class="l-box">
           &copy; 2020 BARRY MURPHY. ALL RIGHTS RESERVED.
         </div>
