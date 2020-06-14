@@ -48,6 +48,9 @@ a.base-link:visited,
 a.base-link:link:active,
 a.base-link:visited:active {
   color: #50afc0;
+  text-decoration: none;
+}
+a.base-link:hover {
   text-decoration: underline;
 }
 
@@ -158,6 +161,7 @@ a.base-link:visited:active {
 
 .c-book {
   margin: 0 0 30px 0;
+  min-height: 200px;
 }
 .c-book .c-book__thumbnail {
   float: left;
@@ -172,13 +176,17 @@ a.base-link:visited:active {
 }
 .c-book .c-book__rating-great,
 .c-book .c-book__rating-good {
-  color: #48b07a;
+  color: #11ca6a;
 }
 .c-book .c-book__rating-average {
   color: #ff9c00;
 }
 .c-book .c-book__rating-poor {
   color: #ff443e;
+}
+.book-divider {
+  border: 1px solid #e6e5ec;
+  margin: 30px 0px 30px 0px;
 }
 
 .footer {

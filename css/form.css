@@ -1,0 +1,45 @@
+.c-form {
+  max-width: 400px;
+}
+.c-form input[type='text'],
+.c-form input[type='email'],
+.c-form textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+.c-form input[type='text']:focus,
+.c-form input[type='email']:focus,
+.c-form textarea:focus {
+  background: #d2d9dd;
+}
+.c-form button {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  margin: 0 auto;
+  background: #50afc0;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #3b8794;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+.c-form button:hover {
+  background: #3b8794;
+}

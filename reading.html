@@ -149,7 +149,7 @@
                 audible
               </a>
               . This saves time and I find I get through a lot more valuable,
-              interesting books this way.
+              interesting books this way. Sorted by most recent to least.
               <br />
               <br />
               <b>Book Summary Resources</b>
@@ -192,55 +192,58 @@
         </div>
 
         <div class="pure-u-1 pure-u-lg-4-5 pure-u-xl-3-5">
-          <div class="l-box no-pad-top">
-            <div class="c-book">
-              <figure>
-                <a
-                  href="https://www.amazon.co.uk/ReWork-Change-Way-Work-Forever/dp/0091929784/"
-                  class="base-link"
-                >
-                  <img
-                    class="c-book__thumbnail base-link"
-                    src="images/book-covers/rework.jpg"
-                    alt="Sum: Forty Tales from the Afterlives - by David Eagleman"
-                  />
-                </a>
-              </figure>
-              <h2 class="c-book__title">
-                ReWork: Change the Way You Work Forever
-              </h2>
-              <p class="c-book__author">
-                <b>Author(s)</b>
-                : Jason Fried & David Heinemeier Hansson
-              </p>
-              <p class="c-book__read-date">
-                <b>When Read</b>
-                : June 2020
-              </p>
-              <p class="c-book__my-rating">
-                <b>My Rating</b>
-                :
-                <span class="c-book__rating-great">5</span>
-                /5
-              </p>
-              <p class="c-book__summary">
-                This is one of my favourite books. It is a must read for anyone
-                interested in a startup. It shows you that you need less than
-                you think to start a business. Plans are actually harmful, how
-                productivity isn’t a result from working long hours and why
-                hiring and seeking investors should be your absolute last
-                resort.
-              </p>
-              <p>
-                <a
-                  href="https://www.amazon.co.uk/ReWork-Change-Way-Work-Forever/dp/0091929784/"
-                  target="_blank"
-                  class="base-link"
-                >
-                  Check it out on Amazon
-                </a>
-              </p>
-            </div>
+          <div id="readingListContainer" class="l-box no-pad-top">
+            <script src="js/json/reading-list-data.js"></script>
+            <script type="text/javascript">
+              // console.log(readingListData);
+              var uiBookList = '';
+              var ratingType = {
+                '1': 'poor',
+                '2': 'poor',
+                '3': 'average',
+                '4': 'good',
+                '5': 'great',
+              };
+              for (var i = 0; i < readingListData.length; i++) {
+                var book = readingListData[i];
+                uiBookList += '<div class="c-book">';
+                uiBookList += '<figure>';
+                uiBookList +=
+                  '<a href="' + book.buyUrl + '" class="base-link">';
+                uiBookList +=
+                  '<img class="c-book__thumbnail base-link" src="images/book-covers/' +
+                  book.thumbnail +
+                  '" alt="' +
+                  book.title +
+                  '"/>';
+                uiBookList += '</a></figure>';
+                uiBookList +=
+                  '<h2 class="c-book__title">' + book.title + '</h2>';
+                uiBookList +=
+                  '<p class="c-book__author"><b>Author(s)</b>: ' +
+                  book.author +
+                  '</p>';
+                uiBookList +=
+                  '<p class="c-book__read-date"><b>When Read</b>: ' +
+                  book.whenRead +
+                  '</p>';
+                uiBookList +=
+                  '<p class="c-book__my-rating"><b>My Rating</b>: <span class="c-book__rating-' +
+                  ratingType[book.myRating] +
+                  '">' +
+                  book.myRating +
+                  '</span>/5</p>';
+                uiBookList +=
+                  '<p class="c-book__summary">' + book.summary + '</p>';
+                uiBookList +=
+                  '<p><a href="' +
+                  book.buyUrl +
+                  '" target="_blank" class="base-link">Check it out on goodreads</a></p></div ><hr class="book-divider">';
+              }
+              document.getElementById(
+                'readingListContainer'
+              ).innerHTML = uiBookList;
+            </script>
           </div>
         </div>
       </div>
