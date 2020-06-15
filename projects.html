@@ -8,6 +8,9 @@
       content="The personal site of Barry Murphy. Web Developer, specialising in Frontend. Former Director of Engineering for the largest classifieds site in Ireland."
     />
     <title>Barry Murphy - Projects</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="css/pure/base-min.css" />
     <link rel="stylesheet" href="css/pure/pure-min.css" />
     <link rel="stylesheet" href="css/pure/pure-grids-responsive-min.css" />
@@ -28,12 +31,15 @@
             href="index.html"
             onclick="updateNav('about-me')"
             class="header-title pure-menu-heading pure-menu-link"
-            ><img
+          >
+            <img
               src="images/profile-june-2020.jpg"
               alt="Barry Murphy Profile Photo"
               class="profile-photo"
-            /><span class="accent">@</span>barryrlmurphy</a
-          >
+            />
+            <span class="accent">@</span>
+            barryrlmurphy
+          </a>
           <ul class="pure-menu-list">
             <li class="pure-menu-item horizontal">
               <a
@@ -41,8 +47,9 @@
                 id="about-me-h"
                 class="pure-menu-link nav-item"
                 onclick="updateNav('about-me')"
-                >About Me</a
               >
+                About Me
+              </a>
             </li>
             <li class="pure-menu-item horizontal">
               <a
@@ -50,8 +57,9 @@
                 id="reading-h"
                 class="pure-menu-link nav-item"
                 onclick="updateNav('reading')"
-                >Reading</a
               >
+                Reading
+              </a>
             </li>
             <li class="pure-menu-item horizontal">
               <a
@@ -59,17 +67,9 @@
                 id="projects-h"
                 class="pure-menu-link nav-item nav-item-selected"
                 onclick="updateNav('projects')"
-                >Projects</a
               >
-            </li>
-            <li class="pure-menu-item horizontal">
-              <a
-                href="contact.html"
-                id="contact-h"
-                class="pure-menu-link nav-item"
-                onclick="updateNav('contact')"
-                >Contact</a
-              >
+                Projects
+              </a>
             </li>
             <a
               href="javascript:void(0);"
@@ -83,51 +83,44 @@
       </div>
 
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
         <a
           href="index.html"
           id="about-me-v"
           class="vertical nav-item"
           onclick="updateNav('about-me')"
-          >About Me</a
         >
+          About Me
+        </a>
         <a
           href="reading.html"
           id="reading-v"
           class="vertical nav-item"
           onclick="updateNav('reading')"
-          >Reading</a
         >
+          Reading
+        </a>
         <a
           href="projects.html"
           id="projects-v"
           class="vertical nav-item nav-item-selected"
           onclick="updateNav('projects')"
-          >Projects</a
         >
-        <a
-          href="contact.html"
-          id="contact-v"
-          class="vertical nav-item"
-          onclick="updateNav('contact')"
-          >Contact</a
-        >
+          Projects
+        </a>
       </div>
 
       <div class="pure-g">
         <div class="pure-u-1">
           <div class="l-box">
             <h1 class="text-box-head">
-              Projects <span class="accent">List</span>
+              Projects
             </h1>
             <h2>
-              Projects I have worked on
+              Various projects I have built, worked on or contributed to.
             </h2>
-            <p class="text-box-subhead">
-              Projects are great!
-            </p>
           </div>
         </div>
 
