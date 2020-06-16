@@ -16,7 +16,7 @@ var readingListData = [
     whenRead: '2020',
     myRating: '4',
     summary:
-      'Chris Hadfield is a pretty infectious person, full of enthuiasm and positivity. I enjoyed the book. It was something different for me to read as I tend to read a lot of entrepeneur and personal development books lately. He had to make some serious sacrifices and endure some tough times in order to acheive his dream of becoming an astronaut. Massive amount of time away from his family and massive personal criticism all the time of his performance in training for his missions. Interesting and inspiring.',
+      'Chris Hadfield is a pretty infectious person, full of enthusiasm and positivity. I enjoyed the book. It was something different for me to read as I tend to read a lot of entrepreneurs and personal development books lately. He had to make some serious sacrifices and endure some tough times in order to achieve his dream of becoming an astronaut. Massive amount of time away from his family and massive personal criticism all the time of his performance in training for his missions. Interesting and inspiring.',
     buyUrl:
       'https://www.goodreads.com/book/show/18170143-an-astronaut-s-guide-to-life-on-earth',
   },
