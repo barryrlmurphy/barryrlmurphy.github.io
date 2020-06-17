@@ -189,6 +189,47 @@ a.base-link:hover {
   margin: 30px 0px 30px 0px;
 }
 
+.c-project {
+  margin: 0 0 30px 0;
+  min-height: 200px;
+}
+.c-project .c-project__col-1 {
+  display: inline;
+}
+.c-project .c-project__thumbnail {
+  float: none;
+  margin: 5px 1.5em 1em 0px;
+  max-width: 100%;
+}
+.c-project .c-project__title,
+.c-project .c-project__company,
+.c-project .c-project__tech {
+  margin: 0px 0px 0px 0px;
+}
+.c-project .c-project__role {
+  margin: 0px 0px 8px 0px;
+}
+.c-project .c-project__tech .tech {
+  background-color: #48b07a;
+  border: 1px solid #48b07a;
+  color: #f2f2f2;
+  padding: 6px;
+  font-size: 10px;
+  border-radius: 4px;
+  margin: 0px;
+  font-size: 12px;
+  line-height: 2.8;
+  white-space: nowrap;
+}
+.c-project .c-project__summary {
+  overflow: hidden;
+  margin: 8px 0px;
+}
+.project-divider {
+  border: 1px solid #e6e5ec;
+  margin: 30px 0px 30px 0px;
+}
+
 .footer {
   text-align: center;
   margin: 50px 0px 0px 0px;
@@ -215,6 +256,10 @@ a.base-link:hover {
   .c-book .c-book__thumbnail {
     max-width: 130px;
   }
+  .c-project .c-project__thumbnail {
+    float: left;
+    max-width: 200px;
+  }
 }
 
 /* large */
@@ -227,6 +272,10 @@ a.base-link:hover {
   }
   .c-book .c-book__thumbnail {
     max-width: 130px;
+  }
+  .c-project .c-project__thumbnail {
+    float: left;
+    max-width: 300px;
   }
 }
 
@@ -246,5 +295,9 @@ a.base-link:hover {
   }
   .c-book .c-book__thumbnail {
     max-width: 130px;
+  }
+  .c-project .c-project__thumbnail {
+    float: left;
+    max-width: 300px;
   }
 }

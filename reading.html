@@ -1,251 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The personal site of Barry Murphy. Web Developer, specialising in Frontend. Former Director of Engineering for the largest classifieds site in Ireland."
-    />
-    <title>Barry Murphy - Reading List</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="css/pure/base-min.css" />
-    <link rel="stylesheet" href="css/pure/pure-min.css" />
-    <link rel="stylesheet" href="css/pure/pure-grids-responsive-min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="content-wrapper">
-      <div class="header">
-        <div class="pure-menu pure-menu-horizontal">
-          <a
-            href="index.html"
-            onclick="updateNav('about-me')"
-            class="header-title pure-menu-heading pure-menu-link"
-          >
-            <img
-              src="images/profile-june-2020.jpg"
-              alt="Barry Murphy Profile Photo"
-              class="profile-photo"
-            />
-            <span class="accent">@</span>
-            barryrlmurphy
-          </a>
-          <ul class="pure-menu-list">
-            <li class="pure-menu-item horizontal">
-              <a
-                href="index.html"
-                id="about-me-h"
-                class="pure-menu-link nav-item"
-                onclick="updateNav('about-me')"
-              >
-                About Me
-              </a>
-            </li>
-            <li class="pure-menu-item horizontal">
-              <a
-                href="reading.html"
-                id="reading-h"
-                class="pure-menu-link nav-item nav-item-selected"
-                onclick="updateNav('reading')"
-              >
-                Reading
-              </a>
-            </li>
-            <li class="pure-menu-item horizontal">
-              <a
-                href="projects.html"
-                id="projects-h"
-                class="pure-menu-link nav-item"
-                onclick="updateNav('projects')"
-              >
-                Projects
-              </a>
-            </li>
-            <a
-              href="javascript:void(0);"
-              class="icon"
-              onclick="toggleSideMenu()"
-            >
-              <i class="fa fa-bars"></i>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The personal site of Barry Murphy. Web Developer, specialising in Frontend. Former Director of Engineering for the largest classifieds site in Ireland." />
+  <title>Barry Murphy - Reading List</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/pure/base-min.css" />
+  <link rel="stylesheet" href="css/pure/pure-min.css" />
+  <link rel="stylesheet" href="css/pure/pure-grids-responsive-min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div class="header">
+      <div class="pure-menu pure-menu-horizontal">
+        <a href="index.html" onclick="updateNav('about-me')" class="header-title pure-menu-heading pure-menu-link">
+          <img src="images/profile-june-2020.jpg" alt="Barry Murphy Profile Photo" class="profile-photo" /><span
+            class="accent">@</span>barryrlmurphy
+        </a>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item horizontal">
+            <a href="index.html" id="about-me-h" class="pure-menu-link nav-item" onclick="updateNav('about-me')">
+              About Me
             </a>
-          </ul>
-        </div>
-      </div>
-
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          &times;
-        </a>
-        <a
-          href="index.html"
-          id="about-me-v"
-          class="vertical nav-item"
-          onclick="updateNav('about-me')"
-        >
-          About Me
-        </a>
-        <a
-          href="reading.html"
-          id="reading-v"
-          class="vertical nav-item nav-item-selected"
-          onclick="updateNav('reading')"
-        >
-          Reading
-        </a>
-        <a
-          href="projects.html"
-          id="projects-v"
-          class="vertical nav-item"
-          onclick="updateNav('projects')"
-        >
-          Projects
-        </a>
-      </div>
-
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-lg-4-5 pure-u-xl-3-5">
-          <div class="l-box">
-            <h1 class="text-box-head">
+          </li>
+          <li class="pure-menu-item horizontal">
+            <a href="reading.html" id="reading-h" class="pure-menu-link nav-item nav-item-selected"
+              onclick="updateNav('reading')">
               Reading
-              <span class="accent">List</span>
-            </h1>
-            <h2>
-              This is a list of some of the books that I have read over the
-              years.
-            </h2>
-            <p class="text-box-subhead">
-              Traditionally I would just buy and read a book but more recently I
-              usually read a book summary first and then either buy the hard
-              copy or listen to it on
-              <a
-                href="https://www.audible.com/"
-                target="_blank"
-                class="base-link"
-              >
-                audible
-              </a>
-              . This saves time and I find I get through a lot more valuable,
-              interesting books this way. Please let me know if you have any
-              <a href="contact.html" class="base-link">
-                comments or reading suggestions
-              </a>
-              . Sorted by most recent to least.
-              <br />
-              <br />
-              <b>Book Summary Resources</b>
-              :
-              <br />
-              <a
-                href="https://www.blinkist.com/"
-                target="_blank"
-                class="base-link"
-              >
-                Blinkist
-              </a>
-              : Like audible only for summaries. Great resource.
-              <br />
-              <a
-                href="https://paulminors.com/"
-                target="_blank"
-                class="base-link"
-              >
-                Paul Minors
-              </a>
-              ,
-              <a
-                href="https://fourminutebooks.com/summaries/"
-                target="_blank"
-                class="base-link"
-              >
-                Four minute books
-              </a>
-              ,
-              <a
-                href="https://www.nateliason.com/notes"
-                target="_blank"
-                class="base-link"
-              >
-                Nat Eliason
-              </a>
-            </p>
-          </div>
-        </div>
+            </a>
+          </li>
+          <li class="pure-menu-item horizontal">
+            <a href="projects.html" id="projects-h" class="pure-menu-link nav-item" onclick="updateNav('projects')">
+              Projects
+            </a>
+          </li>
+          <a href="javascript:void(0);" class="icon" onclick="toggleSideMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+      </div>
+    </div>
 
-        <div class="pure-u-1 pure-u-lg-4-5 pure-u-xl-3-5">
-          <div id="readingListContainer" class="l-box no-pad-top">
-            <script src="js/json/reading-list-data.js"></script>
-            <script type="text/javascript">
-              // console.log(readingListData);
-              var uiBookList = '';
-              var ratingType = {
-                '1': 'poor',
-                '2': 'poor',
-                '3': 'average',
-                '4': 'good',
-                '5': 'great',
-              };
-              for (var i = 0; i < readingListData.length; i++) {
-                var book = readingListData[i];
-                uiBookList += '<div class="c-book">';
-                uiBookList += '<figure>';
-                uiBookList +=
-                  '<a href="' + book.buyUrl + '" class="base-link">';
-                uiBookList +=
-                  '<img class="c-book__thumbnail base-link" src="images/book-covers/' +
-                  book.thumbnail +
-                  '" alt="' +
-                  book.title +
-                  '"/>';
-                uiBookList += '</a></figure>';
-                uiBookList +=
-                  '<h2 class="c-book__title">' + book.title + '</h2>';
-                uiBookList +=
-                  '<p class="c-book__author"><b>Author(s)</b>: ' +
-                  book.author +
-                  '</p>';
-                uiBookList +=
-                  '<p class="c-book__read-date"><b>When Read</b>: ' +
-                  book.whenRead +
-                  '</p>';
-                uiBookList +=
-                  '<p class="c-book__my-rating"><b>My Rating</b>: <span class="c-book__rating-' +
-                  ratingType[book.myRating] +
-                  '">' +
-                  book.myRating +
-                  '</span>/5</p>';
-                uiBookList +=
-                  '<p class="c-book__summary">' + book.summary + '</p>';
-                uiBookList +=
-                  '<p><a href="' +
-                  book.buyUrl +
-                  '" target="_blank" class="base-link">Check it out on goodreads</a></p></div ><hr class="book-divider">';
-              }
-              document.getElementById(
-                'readingListContainer'
-              ).innerHTML = uiBookList;
-            </script>
-          </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
+      <a href="index.html" id="about-me-v" class="vertical nav-item" onclick="updateNav('about-me')">
+        About Me
+      </a>
+      <a href="reading.html" id="reading-v" class="vertical nav-item nav-item-selected" onclick="updateNav('reading')">
+        Reading
+      </a>
+      <a href="projects.html" id="projects-v" class="vertical nav-item" onclick="updateNav('projects')">
+        Projects
+      </a>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-lg-4-5 pure-u-xl-3-5">
+        <div class="l-box">
+          <h1 class="text-box-head">
+            Reading
+            <span class="accent">List</span>
+          </h1>
+          <h2>
+            This is a list of some of the books that I have read over the
+            years.
+          </h2>
+          <p class="text-box-subhead">
+            Traditionally I would just buy and read a book but more recently I
+            usually read a book summary first and then either buy the hard
+            copy or listen to it on
+            <a href="https://www.audible.com/" target="_blank" class="base-link">
+              audible
+            </a>
+            . This saves time and I find I get through a lot more valuable,
+            interesting books this way. Please let me know if you have any
+            <a href="contact.html" class="base-link">
+              comments or reading suggestions
+            </a>
+            . Sorted by most recent to least.
+            <br />
+            <br />
+            <b>Book Summary Resources</b>
+            :
+            <br />
+            <a href="https://www.blinkist.com/" target="_blank" class="base-link">
+              Blinkist
+            </a>
+            : Like audible only for summaries. Great resource.
+            <br />
+            <a href="https://paulminors.com/" target="_blank" class="base-link">
+              Paul Minors
+            </a>
+            ,
+            <a href="https://fourminutebooks.com/summaries/" target="_blank" class="base-link">
+              Four minute books
+            </a>
+            ,
+            <a href="https://www.nateliason.com/notes" target="_blank" class="base-link">
+              Nat Eliason
+            </a>
+          </p>
         </div>
       </div>
 
-      <div class="footer pure-u-1 pure-u-xl-1-1">
-        <div class="l-box">
-          &copy; 2020 BARRY MURPHY. ALL RIGHTS RESERVED.
+      <div class="pure-u-1 pure-u-lg-4-5 pure-u-xl-3-5">
+        <div id="readingListContainer" class="l-box no-pad-top">
+          <script src="js/json/reading-list-data.js"></script>
+          <script type="text/javascript">
+            // console.log(readingListData);
+            var uiBookList = '';
+            var ratingType = {
+              '1': 'poor',
+              '2': 'poor',
+              '3': 'average',
+              '4': 'good',
+              '5': 'great',
+            };
+            for (var i = 0; i < readingListData.length; i++) {
+              var book = readingListData[i];
+              uiBookList += '<div class="c-book">';
+              uiBookList += '<figure>';
+              uiBookList += '<a href="' + book.buyUrl + '" class="base-link">';
+              uiBookList += '<img class="c-book__thumbnail base-link" src="images/book-covers/' +
+                book.thumbnail + '" alt="' + book.title + '"/>';
+              uiBookList += '</a></figure>';
+              uiBookList += '<h2 class="c-book__title">' + book.title + '</h2>';
+              uiBookList += '<p class="c-book__author"><b>Author(s)</b>: ' + book.author + '</p>';
+              uiBookList += '<p class="c-book__read-date"><b>When Read</b>: ' + book.whenRead + '</p>';
+              uiBookList += '<p class="c-book__my-rating"><b>My Rating</b>: <span class="c-book__rating-' +
+                ratingType[book.myRating] + '">' + book.myRating + '</span>/5</p>';
+              uiBookList += '<p class="c-book__summary">' + book.summary + '</p>';
+              uiBookList += '<p><a href="' + book.buyUrl +
+                '" target="_blank" class="base-link">Check it out on goodreads</a></p></div ><hr class="book-divider">';
+            }
+            document.getElementById(
+              'readingListContainer'
+            ).innerHTML = uiBookList;
+          </script>
         </div>
       </div>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/nav.js"></script>
-  </body>
+    <div class="footer pure-u-1 pure-u-xl-1-1">
+      <div class="l-box">
+        &copy; 2020 BARRY MURPHY. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
 </html>

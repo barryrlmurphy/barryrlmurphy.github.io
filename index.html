@@ -1,485 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The personal site of Barry Murphy. Web Developer, specialising in Frontend. Former Director of Engineering for the largest classifieds site in Ireland."
-    />
-    <title>Barry Murphy</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/pure/base-min.css" />
-    <link rel="stylesheet" href="css/pure/pure-min.css" />
-    <link rel="stylesheet" href="css/pure/pure-grids-responsive-min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="content-wrapper">
-      <div class="header sticky">
-        <div class="pure-menu pure-menu-horizontal">
-          <a
-            href="index.html"
-            onclick="updateNav('about-me')"
-            class="header-title pure-menu-heading pure-menu-link"
-            ><img
-              src="images/profile-june-2020.jpg"
-              alt="Barry Murphy Profile Photo"
-              class="profile-photo"
-            /><span class="accent">@</span>barryrlmurphy</a
-          >
-          <ul class="pure-menu-list">
-            <li class="pure-menu-item horizontal">
-              <a
-                href="index.html"
-                id="about-me-h"
-                class="pure-menu-link nav-item nav-item-selected"
-                onclick="updateNav('about-me')"
-                >About Me</a
-              >
-            </li>
-            <li class="pure-menu-item horizontal">
-              <a
-                href="reading.html"
-                id="reading-h"
-                class="pure-menu-link nav-item"
-                onclick="updateNav('reading')"
-                >Reading</a
-              >
-            </li>
-            <li class="pure-menu-item horizontal">
-              <a
-                href="projects.html"
-                id="projects-h"
-                class="pure-menu-link nav-item"
-                onclick="updateNav('projects')"
-                >Projects</a
-              >
-            </li>
-            <a
-              href="javascript:void(0);"
-              class="icon"
-              onclick="toggleSideMenu()"
-            >
-              <i class="fa fa-bars"></i>
-            </a>
-          </ul>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The personal site of Barry Murphy. Web Developer, specialising in Frontend. Former Director of Engineering for the largest classifieds site in Ireland." />
+  <title>Barry Murphy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/pure/base-min.css" />
+  <link rel="stylesheet" href="css/pure/pure-min.css" />
+  <link rel="stylesheet" href="css/pure/pure-grids-responsive-min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div class="header sticky">
+      <div class="pure-menu pure-menu-horizontal">
+        <a href="index.html" onclick="updateNav('about-me')" class="header-title pure-menu-heading pure-menu-link"><img
+            src="images/profile-june-2020.jpg" alt="Barry Murphy Profile Photo" class="profile-photo" /><span
+            class="accent">@</span>barryrlmurphy</a>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item horizontal">
+            <a href="index.html" id="about-me-h" class="pure-menu-link nav-item nav-item-selected"
+              onclick="updateNav('about-me')">About Me</a>
+          </li>
+          <li class="pure-menu-item horizontal">
+            <a href="reading.html" id="reading-h" class="pure-menu-link nav-item"
+              onclick="updateNav('reading')">Reading</a>
+          </li>
+          <li class="pure-menu-item horizontal">
+            <a href="projects.html" id="projects-h" class="pure-menu-link nav-item"
+              onclick="updateNav('projects')">Projects</a>
+          </li>
+          <a href="javascript:void(0);" class="icon" onclick="toggleSideMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
       </div>
+    </div>
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a
-          href="index.html"
-          id="about-me-v"
-          class="vertical nav-item nav-item-selected"
-          onclick="updateNav('about-me')"
-          >About Me</a
-        >
-        <a
-          href="reading.html"
-          id="reading-v"
-          class="vertical nav-item"
-          onclick="updateNav('reading')"
-          >Reading</a
-        >
-        <a
-          href="projects.html"
-          id="projects-v"
-          class="vertical nav-item"
-          onclick="updateNav('projects')"
-          >Projects</a
-        >
-      </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" id="about-me-v" class="vertical nav-item nav-item-selected"
+        onclick="updateNav('about-me')">About Me</a>
+      <a href="reading.html" id="reading-v" class="vertical nav-item" onclick="updateNav('reading')">Reading</a>
+      <a href="projects.html" id="projects-v" class="vertical nav-item" onclick="updateNav('projects')">Projects</a>
+    </div>
 
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-2">
-          <div class="l-box">
-            <h1 class="text-box-head">About <span class="accent">Me</span></h1>
-            <h2>
-              Web Developer and Engineering Manager based in Wexford, Ireland.
-            </h2>
-            <p class="text-box-subhead">
-              As a Developer I have a broad range of experience with a specialisation in Frontend Technology. 
-              I have always loved implementing UI and delivering great UX for end users. 
-              I also have a lot of experience as Engineering Manager, leading teams of 30+ engineers on some of the largest sites in Ireland.<br /><br />
-              Always open to new opportunites, you can contact me on <a href="https://twitter.com/barryrlmurphy" class="base-link" alt="Twitter" target="_blank">Twitter</a>, 
-              <a href="https://www.linkedin.com/in/barryrlmurphy/" class="base-link" alt="LinkedIn" target="_blank">LinkedIn</a> 
-              or <a href="mailto:hello@barryrlmurphy.com" class="base-link">hello@barryrlmurphy.com</a>.
-            </p>
-          </div>
-
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <div class="l-box no-pad-top">
-                <h2 class="text-box-head">Currently</h2>
-                <p class="text-box-subhead">
-                  Director of Engineering for
-                  <a
-                    href="https://www.donedeal.ie"
-                    class="base-link"
-                    alt="DoneDeal"
-                    target="_blank"
-                    >DoneDeal.ie</a
-                  >
-                  &
-                  <a
-                    href="https://www.adverts.ie"
-                    class="base-link"
-                    alt="Adverts"
-                    target="_blank"
-                    >Adverts.ie</a
-                  >.
-                  <br />
-                  Based in Wexford, Ireland. <br />
-                  Working on a business startup idea ...
-                </p>
-              </div>
-            </div>
-
-            <div class="pure-u-1-2">
-              <div class="l-box no-pad-top">
-                <h2 class="text-box-head">Previously</h2>
-                <p class="text-box-subhead">
-                  Engineering Manager, Frontend Engineer and Fullstack Developer
-                  with
-                  <a
-                    href="https://www.donedeal.ie"
-                    class="base-link"
-                    alt="DoneDeal"
-                    target="_blank"
-                    >DoneDeal.ie</a
-                  >,
-                  <a
-                    href="https://www.adverts.ie"
-                    class="base-link"
-                    alt="Adverts"
-                    target="_blank"
-                    >Adverts.ie</a
-                  >,
-                  <a
-                    href="https://www.daft.ie"
-                    class="base-link"
-                    alt="Daft"
-                    target="_blank"
-                    >Daft.ie</a
-                  >
-                  and others...
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <div class="l-box no-pad-top">
-                <h2 class="text-box-head">Interests</h2>
-                <p class="text-box-subhead">
-                  <a
-                    href="https://www.strava.com/athletes/7685209"
-                    class="base-link"
-                    alt="Strava running"
-                    target="_blank"
-                    >Running</a
-                  >
-                  <br />
-                  <a
-                    href="https://www.strava.com/athletes/7685209"
-                    class="base-link"
-                    alt="Strava hiking"
-                    target="_blank"
-                    >Hiking</a
-                  >
-                  <br />
-                  History<br />
-                  Sports<br />
-                  <a
-                    href="https://www.flickr.com/photos/186422899@N08/"
-                    class="base-link"
-                    alt="Photography"
-                    target="_blank"
-                    >Photography</a
-                  >
-                  <br />
-                  <a href="reading.html" class="base-link" alt="Photography">Reading</a> <br />
-                  All things tech
-                </p>
-              </div>
-            </div>
-
-            <div class="pure-u-1-2">
-              <div class="l-box no-pad-top">
-                <h2 class="text-box-head">Links</h2>
-                <p class="text-box-subhead">
-                  <a
-                    href="https://github.com/barryrlmurphy"
-                    class="base-link"
-                    alt="GitHub"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  - code<br />
-                  <a
-                    href="https://medium.com/@barryrlmurphy"
-                    class="base-link"
-                    alt="Medium"
-                    target="_blank"
-                    >Medium</a
-                  >
-                  - thoughts<br />
-                  <a
-                    href="https://twitter.com/barryrlmurphy"
-                    class="base-link"
-                    alt="Twitter"
-                    target="_blank"
-                    >Twitter</a
-                  >
-                  - small thoughts<br />
-                  <a
-                    href="https://www.linkedin.com/in/barryrlmurphy/"
-                    class="base-link"
-                    alt="LinkedIn"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                  - CV / Resume<br />
-                  <a
-                    href="https://www.flickr.com/photos/186422899@N08/"
-                    class="base-link"
-                    alt="Flickr"
-                    target="_blank"
-                    >Flickr</a
-                  >
-                  - photos<br />
-                  <a
-                    href="https://www.instagram.com/barryrlmurphy/?hl=en"
-                    class="base-link"
-                    alt="Instagram"
-                    target="_blank"
-                    >Instagram</a
-                  >
-                  - more photos<br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-2">
-          <div class="l-box">
-            <img
-              class="img-dev-at-work pure-img"
-              src="images/dev-work.png"
-              alt="Developer at work"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="pure-g">
-
-        <div class="pure-u-1 pure-u-sm-1-2">
-          <div class="l-box no-pad-top">
-            <h2 class="text-box-head">Goals</h2>
-            <p class="text-box-subhead">
-            <p>
-              List of things I want to experience or acheive :)
-            </p>
-            <div class="pure-g">
-              <div class="pure-u-1-2">
-                <div class="">
-                  <span class="strike acheived">Paraglide from a speedboat</span> <br />
-                  Do a parachute jump <br />
-                  Skydive <br />
-                  Fly a plane <br />
-                  <span class="strike acheived">Get a BSc</span> <br />
-                  Get an MA <br />
-                  Explore the Scottish Highlands<br />
-                  <span class="strike acheived">Visit Thailand</span><br />
-                  <span class="strike acheived">Do full moon party Thailand</span><br />
-                  Visit Vietnam<br />
-                  Get a motorcycle licence<br />
-                  Do a ski strip<br />
-                  Visit Switzerland<br />
-                  <span class="strike acheived">Visit New York</span><br />
-                  Do foreign voluntary charity service<br />
-                  Become a qualified first aider<br />
-                  <span class="strike acheived">Run a 5k</span><br />
-                  <span class="strike acheived">Run a 10k</span><br />
-                  Run a half-marathon<br />
-                  Run a marathon<br />
-                  Go on a wilderness survival course<br />
-                  Trek in Nepal<br />
-                  <span class="strike acheived">Go scuba diving</span> <br />
-                  Become certified open water diver (PADI)<br />
-                  Swim with dolphins<br />
-                  Dive with sharks<br />
-                  Whale watching<br />
-                  See the Grand Canyon <br />
-                  <span class="strike acheived">Visit the Amalfi Coast</span><br />
-                  Visit Sydney<br />
-                  Trek to Machu Picchu<br />
-                  Cruise the Carribean<br />
-                </div>
-              </div>
-          
-              <div class="pure-u-1-2">
-                <div class="goals-col-2">
-                  Setup my own company<br />
-                  Work for myself<br />
-                  Be financially independent<br />
-                  Write a book<br />
-                  Learn to play the guitar (well)<br />
-                  See the Pyramids of Giza<br />
-                  Walk the Great Wall of China<br />
-                  <span class="strike acheived">See Naples (and die)</span><br />
-                  Go on an African Safari<br />
-                  Learn another language (well)<br />
-                  <span class="strike acheived">Visit Rome</span><br />
-                  Travel on the Trans-Siberian railway<br />
-                  Drive coast-to-coast USA<br />
-                  Visit Everest<br />
-                  <span class="strike acheived">Find a soul mate</span><br />
-                  <span class="strike acheived">Own a house</span><br />
-                  <span class="strike acheived">Become a father</span><br />
-                  <span class="strike acheived">Bring kids to Disneyland!</span><br />
-                  Work overseas<br />
-                  <span class="strike acheived">Work for DoneDeal</span><br />
-                  Visit Machu Picchu<br />
-                  See the Aurora Borealis<br />
-                  Crazy weekend in Las Vegas<br />
-                  <span class="strike acheived">Visit Paris</span><br />
-                  <span class="strike acheived">Visit Barcelona</span><br />
-                  <span class="strike acheived">Visit London</span><br />
-                  Do the four peaks challenge of Ireland<br />
-                  Walk the Santiago De Compostela<br />
-                  Climb Mount Kilimanjaro<br />
-                </div>
-              </div>
-            </div>
-          
-            </p>
-          </div>
-        </div>
-
-        <div class="pure-u-1 pure-u-sm-1-2">
-          <div class="l-box no-pad-top">
-            <h2 class="text-box-head">Skills & Specialties</h2>
-            <p class="text-box-subhead">
-              <span class="skill">Javascript</span>
-              <span class="skill">React</span>
-              <span class="skill">AngularJS</span>
-              <span class="skill">CSS(3)</span>
-              <span class="skill">HTML(5)</span>
-              <span class="skill">JSON</span>
-              <span class="skill">Node.js</span>
-              <span class="skill">REST APIs</span>
-              <span class="skill">BEM</span>
-              <span class="skill">Git/Gighub</span>
-              <span class="skill">MySQL</span>
-              <span class="skill">XML</span>
-              <span class="skill">CLI</span>
-              <span class="skill">JQuery</span>
-              <span class="skill">SASS</span>
-              <span class="skill">MVC</span>
-              <span class="skill">OOP</span>
-              <span class="skill">SEO</span>
-              <span class="skill">PHP</span>
-              <span class="skill">DevOps</span>
-              <span class="skill">Scrum</span>
-              <span class="skill">Kanban</span>
-              <span class="skill">Scrumban</span>
-              <span class="skill">Lean Principles</span>
-              <span class="skill">Leadership</span>
-              <span class="skill">Coaching & Mentoring</span>
-              <span class="skill">Building High Performing Teams</span>
-              <span class="skill">Strategic Technical Planning</span>
-              <span class="skill">Change Management</span>
-              <span class="skill">Stakeholder Management</span>
-              <span class="skill">Project Management</span>
-              <span class="skill">Hiring High Performers</span>
-              <span class="skill">Process Improvement</span>
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-lg-1-2">
-          <div class="l-box no-pad-top">
-            <h2 class="text-box-head">Experience</h2>
-            <p>
-              Over 15 years as a Web Developer and Engineering Manager.
-            </p>
-            <div class="exp-slot">
-              <h3 class="exp-title">Director of Engineering</h3>
-              <p class="exp-location">
-                Distilled SCH (DoneDeal.ie & Adverts.ie) - Wexford, Ireland
-              </p>
-              <p class="exp-time">Feb 2019–Present</p>
-            </div>
-            <div class="exp-slot">
-              <h3 class="exp-title">Group Engineering Manager</h3>
-              <p class="exp-location">
-                Distilled SCH (DoneDeal.ie & Adverts.ie) - Wexford/Dublin,
-                Ireland
-              </p>
-              <p class="exp-time">Mar 2018–Feb 2019</p>
-            </div>
-            <div class="exp-slot">
-              <h3 class="exp-title">Frontend Engineering Manager</h3>
-              <p class="exp-location">
-                Distilled SCH (DoneDeal.ie & Adverts.ie) - Wexford/Dublin,
-                Ireland
-              </p>
-              <p class="exp-time">Jan 2017–Mar 2018</p>
-            </div>
-            <div class="exp-slot">
-              <h3 class="exp-title">Frontend Team Lead</h3>
-              <p class="exp-location">
-                DoneDeal.ie - Wexford, Ireland
-              </p>
-              <p class="exp-time">Jan 2014–Jan 2017</p>
-            </div>
-            <div class="exp-slot">
-              <h3 class="exp-title">Senior Frontend Developer</h3>
-              <p class="exp-location">
-                DoneDeal.ie - Wexford, Ireland
-              </p>
-              <p class="exp-time">Jun 2012–Jan 2014</p>
-            </div>
-            <div class="exp-slot">
-              <h3 class="exp-title">Fullstack Web Developer</h3>
-              <p class="exp-location">
-                NolanTransport.com - Wexford, Ireland
-              </p>
-              <p class="exp-time">Jul 2006–Jun 2012</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="footer pure-u-1 pure-u-xl-1-1">
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-2">
         <div class="l-box">
-          &copy; 2020 BARRY MURPHY. ALL RIGHTS RESERVED.
+          <h1 class="text-box-head">About <span class="accent">Me</span></h1>
+          <h2>
+            Hey 👋, I'm Barry Murphy. I'm a Web Developer and Engineering Manager based in Wexford, Ireland.
+          </h2>
+          <p class="text-box-subhead">
+            I’ve been working as developer & engineering manager for over 15 years. As a developer I specialise in
+            frontend technology. I've also built up a lot of experience as an engineering manager, leading teams of 30+
+            engineers on some of the
+            largest sites in Ireland.<br /><br />
+
+            Always open to new opportunites, you can contact me on <a href="https://twitter.com/barryrlmurphy"
+              class="base-link" alt="Twitter" target="_blank">Twitter</a>,
+            <a href="https://www.linkedin.com/in/barryrlmurphy/" class="base-link" alt="LinkedIn"
+              target="_blank">LinkedIn</a>
+            or <a href="mailto:hello@barryrlmurphy.com" class="base-link">hello@barryrlmurphy.com</a>.
+          </p>
+        </div>
+
+        <div class="pure-g">
+          <div class="pure-u-1-2">
+            <div class="l-box no-pad-top">
+              <h2 class="text-box-head">Currently</h2>
+              <p class="text-box-subhead">
+                Director of Engineering for
+                <a href="https://www.donedeal.ie" class="base-link" alt="DoneDeal" target="_blank">DoneDeal.ie</a>
+                &
+                <a href="https://www.adverts.ie" class="base-link" alt="Adverts" target="_blank">Adverts.ie</a>.
+                <br />
+                Based in Wexford, Ireland. <br />
+                Working on a business startup idea ...
+              </p>
+            </div>
+          </div>
+
+          <div class="pure-u-1-2">
+            <div class="l-box no-pad-top">
+              <h2 class="text-box-head">Previously</h2>
+              <p class="text-box-subhead">
+                Engineering Manager, Frontend Engineer and Fullstack Developer
+                with
+                <a href="https://www.donedeal.ie" class="base-link" alt="DoneDeal" target="_blank">DoneDeal.ie</a>,
+                <a href="https://www.adverts.ie" class="base-link" alt="Adverts" target="_blank">Adverts.ie</a>,
+                <a href="https://www.daft.ie" class="base-link" alt="Daft" target="_blank">Daft.ie</a>
+                and others...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pure-g">
+          <div class="pure-u-1-2">
+            <div class="l-box no-pad-top">
+              <h2 class="text-box-head">Interests</h2>
+              <p class="text-box-subhead">
+                <a href="https://www.strava.com/athletes/7685209" class="base-link" alt="Strava running"
+                  target="_blank">Running</a>
+                <br />
+                <a href="https://www.strava.com/athletes/7685209" class="base-link" alt="Strava hiking"
+                  target="_blank">Hiking</a>
+                <br />
+                History<br />
+                Sports<br />
+                <a href="https://www.flickr.com/photos/186422899@N08/" class="base-link" alt="Photography"
+                  target="_blank">Photography</a>
+                <br />
+                <a href="reading.html" class="base-link" alt="Photography">Reading</a> <br />
+                All things tech
+              </p>
+            </div>
+          </div>
+
+          <div class="pure-u-1-2">
+            <div class="l-box no-pad-top">
+              <h2 class="text-box-head">Links</h2>
+              <p class="text-box-subhead">
+                <a href="https://github.com/barryrlmurphy" class="base-link" alt="GitHub" target="_blank">GitHub</a>
+                - code<br />
+                <a href="https://medium.com/@barryrlmurphy" class="base-link" alt="Medium" target="_blank">Medium</a>
+                - thoughts<br />
+                <a href="https://twitter.com/barryrlmurphy" class="base-link" alt="Twitter" target="_blank">Twitter</a>
+                - small thoughts<br />
+                <a href="https://www.linkedin.com/in/barryrlmurphy/" class="base-link" alt="LinkedIn"
+                  target="_blank">LinkedIn</a>
+                - CV / Resume<br />
+                <a href="https://www.flickr.com/photos/186422899@N08/" class="base-link" alt="Flickr"
+                  target="_blank">Flickr</a>
+                - photos<br />
+                <a href="https://www.instagram.com/barryrlmurphy/?hl=en" class="base-link" alt="Instagram"
+                  target="_blank">Instagram</a>
+                - more photos<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-2">
+        <div class="l-box">
+          <img class="img-dev-at-work pure-img" src="images/dev-work.png" alt="Developer at work" />
         </div>
       </div>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/nav.js"></script>
-  </body>
+    <div class="pure-g">
+
+      <div class="pure-u-1 pure-u-sm-1-2">
+        <div class="l-box no-pad-top">
+          <h2 class="text-box-head">Goals</h2>
+          <p class="text-box-subhead">
+          <p>
+            A list I have been adding to over the past few years of cool things I want to experience or acheive :)
+          </p>
+          <div class="pure-g">
+            <div class="pure-u-1-2">
+              <div class="">
+                <span class="strike acheived">Paraglide from a speedboat</span> <br />
+                Do a parachute jump <br />
+                Skydive <br />
+                Fly a plane <br />
+                <span class="strike acheived">Get a BSc</span> <br />
+                Get an MA <br />
+                Explore the Scottish Highlands<br />
+                <span class="strike acheived">Visit Thailand</span><br />
+                <span class="strike acheived">Do full moon party Thailand</span><br />
+                Visit Vietnam<br />
+                Get a motorcycle licence<br />
+                Do a ski strip<br />
+                Visit Switzerland<br />
+                <span class="strike acheived">Visit New York</span><br />
+                Do foreign voluntary charity service<br />
+                Become a qualified first aider<br />
+                <span class="strike acheived">Run a 5k</span><br />
+                <span class="strike acheived">Run a 10k</span><br />
+                Run a half-marathon<br />
+                Run a marathon<br />
+                Go on a wilderness survival course<br />
+                Trek in Nepal<br />
+                <span class="strike acheived">Go scuba diving</span> <br />
+                Become certified open water diver (PADI)<br />
+                Swim with dolphins<br />
+                Dive with sharks<br />
+                Whale watching<br />
+                See the Grand Canyon <br />
+                <span class="strike acheived">Visit the Amalfi Coast</span><br />
+                Visit Sydney<br />
+                Trek to Machu Picchu<br />
+                Cruise the Carribean<br />
+                <span class="strike acheived">Top of a Skyscraper</span><br />
+              </div>
+            </div>
+
+            <div class="pure-u-1-2">
+              <div class="goals-col-2">
+                Setup my own company<br />
+                Work for myself<br />
+                Be financially independent<br />
+                Write a book<br />
+                Learn to play the guitar (well)<br />
+                See the Pyramids of Giza<br />
+                Walk the Great Wall of China<br />
+                <span class="strike acheived">See Naples (and die)</span><br />
+                Go on an African Safari<br />
+                Learn another language (well)<br />
+                <span class="strike acheived">Visit Rome</span><br />
+                <span class="strike acheived">Visit St. Peters Basilica</span><br />
+                Travel on the Trans-Siberian railway<br />
+                Drive coast-to-coast USA<br />
+                Visit Everest<br />
+                <span class="strike acheived">Find a soul mate</span><br />
+                <span class="strike acheived">Own a house</span><br />
+                <span class="strike acheived">Become a father</span><br />
+                <span class="strike acheived">Bring kids to Disneyland!</span><br />
+                Work overseas<br />
+                <span class="strike acheived">Work for DoneDeal</span><br />
+                Visit Machu Picchu<br />
+                See the Aurora Borealis<br />
+                Crazy weekend in Las Vegas<br />
+                <span class="strike acheived">Visit Paris</span><br />
+                <span class="strike acheived">Visit Barcelona</span><br />
+                <span class="strike acheived">Visit London</span><br />
+                Do the four peaks challenge of Ireland<br />
+                Walk the Santiago De Compostela<br />
+                Climb Mount Kilimanjaro<br />
+              </div>
+            </div>
+          </div>
+
+          </p>
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-sm-1-2">
+        <div class="l-box no-pad-top">
+          <h2 class="text-box-head">Skills & Specialties</h2>
+          <p class="text-box-subhead">
+            <span class="skill">Javascript(ES6)</span>
+            <span class="skill">React</span>
+            <span class="skill">AngularJS</span>
+            <span class="skill">CSS(3)</span>
+            <span class="skill">HTML(5)</span>
+            <span class="skill">JSON</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">BEM</span>
+            <span class="skill">Git/Gighub</span>
+            <span class="skill">Postgres</span>
+            <span class="skill">XML</span>
+            <span class="skill">SQL</span>
+            <span class="skill">CLI</span>
+            <span class="skill">JQuery</span>
+            <span class="skill">SASS</span>
+            <span class="skill">MVC</span>
+            <span class="skill">SEO</span>
+            <span class="skill">DevOps</span>
+            <span class="skill">Scrum</span>
+            <span class="skill">Kanban</span>
+            <span class="skill">Scrumban</span>
+            <span class="skill">Leadership</span>
+            <span class="skill">Coaching & Mentoring</span>
+            <span class="skill">Building High Performing Teams</span>
+            <span class="skill">Strategic Technical Planning</span>
+            <span class="skill">Change Management</span>
+            <span class="skill">Project Management</span>
+            <span class="skill">Hiring High Performers</span>
+            <span class="skill">Process Improvement</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-lg-1-2">
+        <div class="l-box no-pad-top">
+          <h2 class="text-box-head">Experience</h2>
+          <p>
+            Over 15 years as a Web Developer and Engineering Manager.
+          </p>
+          <div class="exp-slot">
+            <h3 class="exp-title">Director of Engineering</h3>
+            <p class="exp-location">
+              Distilled SCH (DoneDeal.ie & Adverts.ie) - Wexford, Ireland
+            </p>
+            <p class="exp-time">Feb 2019–Present</p>
+          </div>
+          <div class="exp-slot">
+            <h3 class="exp-title">Group Engineering Manager</h3>
+            <p class="exp-location">
+              Distilled SCH (DoneDeal.ie & Adverts.ie) - Wexford/Dublin,
+              Ireland
+            </p>
+            <p class="exp-time">Mar 2018–Feb 2019</p>
+          </div>
+          <div class="exp-slot">
+            <h3 class="exp-title">Frontend Engineering Manager</h3>
+            <p class="exp-location">
+              Distilled SCH (DoneDeal.ie & Adverts.ie) - Wexford/Dublin,
+              Ireland
+            </p>
+            <p class="exp-time">Jan 2017–Mar 2018</p>
+          </div>
+          <div class="exp-slot">
+            <h3 class="exp-title">Frontend Team Lead</h3>
+            <p class="exp-location">
+              DoneDeal.ie - Wexford, Ireland
+            </p>
+            <p class="exp-time">Jan 2014–Jan 2017</p>
+          </div>
+          <div class="exp-slot">
+            <h3 class="exp-title">Senior Frontend Developer</h3>
+            <p class="exp-location">
+              DoneDeal.ie - Wexford, Ireland
+            </p>
+            <p class="exp-time">Jun 2012–Jan 2014</p>
+          </div>
+          <div class="exp-slot">
+            <h3 class="exp-title">Fullstack Web Developer</h3>
+            <p class="exp-location">
+              NolanTransport.com - Wexford, Ireland
+            </p>
+            <p class="exp-time">Jul 2006–Jun 2012</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer pure-u-1 pure-u-xl-1-1">
+      <div class="l-box">
+        &copy; 2020 BARRY MURPHY. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
 </html>

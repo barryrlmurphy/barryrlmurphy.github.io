@@ -38,9 +38,6 @@
 
 /* medium */
 @media (max-width: 768px) and (min-width: 569px) {
-  .sidenav {
-    padding-top: 15px;
-  }
   .sidenav a {
     font-size: 18px;
   }
