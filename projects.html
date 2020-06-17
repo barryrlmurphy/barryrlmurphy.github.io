@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The list of projects worked on by Barry Murphy. Web Developer and Engineering Manager based in Wexford, Ireland." />
+  <title>Barry Murphy | Projects I have worked on</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169845535-1"></script>
+  <script src="js/ga.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/pure/base-min.css" />
+  <link rel="stylesheet" href="css/pure/pure-min.css" />
+  <link rel="stylesheet" href="css/pure/pure-grids-responsive-min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div class="header">
+      <div class="pure-menu pure-menu-horizontal">
+        <a href="index.html" onclick="updateNav('about-me')" class="header-title pure-menu-heading pure-menu-link">
+          <img src="images/profile-june-2020.jpg" alt="Barry Murphy Profile Photo" class="profile-photo" /><span
+            class="accent">@</span>barryrlmurphy
+        </a>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item horizontal">
+            <a href="index.html" id="about-me-h" class="pure-menu-link nav-item" onclick="updateNav('about-me')">
+              About Me
+            </a>
+          </li>
+          <li class="pure-menu-item horizontal">
+            <a href="reading.html" id="reading-h" class="pure-menu-link nav-item" onclick="updateNav('reading')">
+              Reading
+            </a>
+          </li>
+          <li class="pure-menu-item horizontal">
+            <a href="projects.html" id="projects-h" class="pure-menu-link nav-item nav-item-selected"
+              onclick="updateNav('projects')">
+              Projects
+            </a>
+          </li>
+          <a href="javascript:void(0);" class="icon" onclick="toggleSideMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
+      <a href="index.html" id="about-me-v" class="vertical nav-item" onclick="updateNav('about-me')">
+        About Me
+      </a>
+      <a href="reading.html" id="reading-v" class="vertical nav-item" onclick="updateNav('reading')">
+        Reading
+      </a>
+      <a href="projects.html" id="projects-v" class="vertical nav-item nav-item-selected"
+        onclick="updateNav('projects')">
+        Projects
+      </a>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div class="l-box">
+          <h1 class="text-box-head">
+            Projects
+          </h1>
+          <h2 class="text-box-subhead">
+            Various projects I have built, worked on or contributed to over the years.
+          </h2>
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-lg-4-5 pure-u-xl-3-5">
+        <div class="l-box no-pad-top">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/ux.jpg" alt="UX Review App">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="#" class="base-link">UX Review App</a>
+                &#128076;
+              </h3>
+              <p class="c-project__company"><b>Personal</b></p>
+              <p class="c-project__role"><b>2020 (WIP)</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">React</span>
+                <span class="tech">NextJS</span>
+                <span class="tech">Node.js</span>
+                <span class="tech">Styled-Components</span>
+                <span class="tech">Jest</span>
+                <span class="tech">REST-APIs</span>
+                <span class="tech">MongoDB</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                The UX review app is designed to guide designers (or anyone) perform a detailed UX review on any site
+                or app. Currently, a work in progress ...
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/dev-work.png" alt="Personal Site">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="http://www.barryrlmurphy.com" class="base-link">Personal Site
+                  (barryrlmurphy.com)</a>
+                &#128075;
+              </h3>
+              <p class="c-project__company"><b>Personal</b></p>
+              <p class="c-project__role"><b>2020</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">Github-Pages</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                Created an updated personal site. A personal site is really useful for sharing your thoughts, skills,
+                experience, previous work and a bit of your personality.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/daft-project.jpg" alt="Daft.ie">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="https://touch.daft.ie/" target="_blank" class="base-link">Shared Platform Project</a>
+                &#127968;
+              </h3>
+              <p class="c-project__company"><b>Daft.ie</b></p>
+              <p class="c-project__role"><b>Frontend Engineering Manager, 2018</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">React</span>
+                <span class="tech">NextJS</span>
+                <span class="tech">Node.js</span>
+                <span class="tech">Styled-Components</span>
+                <span class="tech">Typescript</span>
+                <span class="tech">Jest</span>
+                <span class="tech">Webpack</span>
+                <span class="tech">REST-APIs</span>
+                <span class="tech">Postgres</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                As part of a major platform uplift project for the Daft website I oversaw all the initial planning for a
+                new standalone frontend app. The app uses the React framework and NextJS for server side rendering. It
+                is fully responsive and uses modern frontend best practices. The new app is now used as a starter kit
+                for all our new frontend apps. The first version of the new site was launched in 2019.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/jira-project.jpg" alt="Jira UI Improvements">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="https://chrome.google.com/webstore/detail/jira-interface-improvemen/mmbhfikppdnhffajifihnlcffjflffok?hl=en"
+                  target="_blank" class="base-link">Jira Interface Improvements</a>
+                &#128640;
+              </h3>
+              <p class="c-project__company"><b>Personal, 2017</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                Jira is a great tool for issue and project tracking but sometimes the interface can be frustrating. I
+                built a chrome browser extension that improved the experience of using Jira. This extension
+                included various modifications to improve the usability and visibility of Jira interfaces.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/jupiter.png" alt="DoneDeal.ie">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="http://www.donedeal.ie/" target="_blank" class="base-link">Jupiter Project</a>
+                &#127765;
+              </h3>
+              <p class="c-project__company"><b>DoneDeal.ie</b></p>
+              <p class="c-project__role"><b>Lead Frontend Developer, 2015</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">AngularJS</span>
+                <span class="tech">React</span>
+                <span class="tech">SVG</span>
+                <span class="tech">SASS</span>
+                <span class="tech">GULP</span>
+                <span class="tech">REST-APIs</span>
+                <span class="tech">Postgres</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                This project was a complete redesign of the DoneDeal website. I was lead Frontend developer on the
+                project. I designed the frontend technical strategy for the project. The new site was fully responsive,
+                mobile first, API driven. It was built using the AngularJS frame, SASS, Grunt, SVG icons and React for
+                SSR. I presented at the 2015 Schibsted Tech Super Week on this project and I received an award from the
+                company.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/oppa.jpg" alt="DoneDeal.ie">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="https://www.donedeal.ie/publish" target="_blank" class="base-link">One Page Place Ad (OPPA)</a>
+                &#128196;
+              </h3>
+              <p class="c-project__company"><b>DoneDeal.ie</b></p>
+              <p class="c-project__role"><b>Lead Frontend Developer, 2014</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">JQuery</span>
+                <span class="tech">Mustache</span>
+                <span class="tech">Postgres</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                I was lead frontend developer on this project as well as being heavily involved in the UI design and
+                user testing. This was the first fully responsive mobile first area of the site. It was also the first
+                area of the site to be API driven. Over 2 million ads are placed on the site using these pages each
+                year. I received an award from the company for my work on this project.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/mobile-site-project.jpg"
+                  alt="DoneDeal.ie Mobile Site">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title">
+                <a href="http://www.donedeal.ie/" target="_blank" class="base-link">DoneDeal Mobile Site</a> &#128242;
+              </h3>
+              <p class="c-project__company"><b>DoneDeal.ie</b></p>
+              <p class="c-project__role"><b>Lead Frontend Developer, 2012</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">JQuery-Mobile</span>
+                <span class="tech">Postgres</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                I designed and built the frontend for the companies first mobile ready version of the DoneDeal website.
+                This was before responsive design and at the time most companies had a mobile site and a separate
+                desktop site.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/nolan-project-2.jpg" alt="Nolan Transport">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title"><a href="http://www.nolantransport.com/" target="_blank"
+                  class="base-link">Transport Planning System (TPS)</a> &#128222;</h3>
+              <p class="c-project__company"><b>Nolan Transport</b></p>
+              <p class="c-project__role"><b>PHP Web Developer, 2009</b></p>
+              <p class="c-project__tech">
+                <span class="tech">PHP</span>
+                <span class="tech">Javascript</span>
+                <span class="tech">JQuery</span>
+                <span class="tech">MySQL</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                We completely built an in-house transport planning system which is still used to this day to organise
+                the logistics of moving 350+ trucks and 1000+ trailers across Ireland, Britain and main land Europe on a
+                daily basis. The system takes data from the GPS tracking devices on all the companies vehicles and turns
+                this into information for the transport planners.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/nolan-project.jpg" alt="Nolan Transport">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title"><a href="http://www.nolantransport.com/" target="_blank"
+                  class="base-link">Driver Timesheets System</a> &#128667;</h3>
+              <p class="c-project__company"><b>Nolan Transport</b></p>
+              <p class="c-project__role"><b>PHP Web Developer, 2008</b></p>
+              <p class="c-project__tech">
+                <span class="tech">PHP</span>
+                <span class="tech">Javascript</span>
+                <span class="tech">JQuery</span>
+                <span class="tech">MySQL</span>
+                <span class="tech">CSS(3)</span>
+                <span class="tech">HTML(5)</span>
+              </p>
+              <p class="c-project__summary">
+                This system is used to graph the driving time of all drivers based on their GPS data. This data is then
+                used by the payroll system to automatically allocate weekly pay brackets for each driver. The system is
+                still used by the company.
+              </p>
+            </div>
+          </div>
+
+          <hr class="project-divider">
+
+          <div class="c-project">
+            <div class="c-project__col-1">
+              <figure>
+                <img class="c-project__thumbnail" src="images/projects/waters-project.jpg" alt="Waters Technology">
+              </figure>
+            </div>
+            <div class="c-project__col-2">
+              <h3 class="c-project__title"><a href="https://www.waters.com/nextgen/gb/en.html" target="_blank"
+                  class="base-link">Spec Lookup System</a> &#128300;</h3>
+              <p class="c-project__company"><b>Waters Technology</b></p>
+              <p class="c-project__role"><b>Lead Developer, 2005</b></p>
+              <p class="c-project__tech">
+                <span class="tech">Javascript</span>
+                <span class="tech">MS-SQL</span>
+              </p>
+              <p class="c-project__summary">
+                This was a system I built on my own initiative. The system for the first time digitised thousands of
+                paper specs. It provided an interface for technicians to instantly find the correct spec for the
+                compontent they wanted to build. This saved a massive amount time for technicians and reduced human
+                error. I received an award from the company for my work on this system.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer pure-u-1 pure-u-xl-1-1">
+      <div class="l-box">
+        &copy; 2020 BARRY MURPHY. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
