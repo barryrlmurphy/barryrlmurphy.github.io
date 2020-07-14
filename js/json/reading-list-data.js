@@ -1,5 +1,15 @@
 var readingListData = [
   {
+    title: 'SPQR: A History of Ancient Rome',
+    thumbnail: 'spqr.jpg',
+    author: 'Mary Beard',
+    whenRead: '2020',
+    myRating: '4',
+    summary:
+      'Good book. As with any book that spans almost a 1000 years of history it is good at giving the overall picture but cannot go into much detail on individual events. There were a couple of chapters that gave detail of the lives and norms of regular Roman citizens which was interesting. Also, there was one passage detailing how Cicero had slaves call "readers" who read aloud his books for him, like an ancient version of audible.',
+    buyUrl: 'https://www.goodreads.com/book/show/28789711-spqr',
+  },
+  {
     title: 'The Third Pillar',
     thumbnail: 'third-pillar.jpg',
     author: 'Raghuram G. Rajan',
