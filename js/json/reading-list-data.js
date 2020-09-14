@@ -1,5 +1,15 @@
 var readingListData = [
   {
+    title: 'Midnight in Chernobyl',
+    thumbnail: 'chernobyl.jpg',
+    author: 'Adam Higginbotham',
+    whenRead: '2020',
+    myRating: '5',
+    summary:
+      'I found this book to be a really compelling but also disturbing read. I had never fully realised the incredible extent of the disaster and how close it came to being an even far worse disaster. For me it highlights on the one hand how ingenious mankind is, harnessing the atom but also how idiotic and wreckless we can be with such powerful and disstructive forces. Definitely recommend this book, there is also a short mini-series adaptation on the BBC from this book which is really good.',
+    buyUrl: 'https://www.goodreads.com/book/show/40538681-midnight-in-chernobyl',
+  },
+  {
     title: 'SPQR: A History of Ancient Rome',
     thumbnail: 'spqr.jpg',
     author: 'Mary Beard',
